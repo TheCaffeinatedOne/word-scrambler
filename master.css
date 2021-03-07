@@ -1,0 +1,29 @@
+body{
+  font-family: monospace;
+  background-color: rgba(137, 137, 137);
+    background-color: white;
+}
+button{
+  border-style: solid;
+  font-family: monospace;
+  background-color: white;
+  border-width: 3px;
+  border-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+img {
+ margin: 20px;
+ border-style: solid;
+ border-color: blackp
+}
+mark {
+  background-color: black;
+  color: white
+}

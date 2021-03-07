@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+
+    <h1>i hate myself</h1>
+    <span>
+      <mark>
+    so the goal is to just set up very simple word scrambling but on multiple levels so it becomes complex. i made it in js because 1 i was bored 2 was learning about ssl so im planning on doing that. its also for future job reference for electron.js and js in general. this project was done over the course of 2 weekends and one day i had extra free time in between. so 5 days in total and smaller work windows(this was only worked on 5 hrs max per)
+</mark>
+    </span>
+    <br>
+  <h2>Docs/How To Use It</h2>
+    <span>
+      <mark>
+    use encrypt to change the letter over in the alphabet by a number of your choice <br>
+    use decrypt to move it back by the set number of choice <br>
+    use discord emoji to change it to a discord emoji format :emoji_name: <br>
+    use text to change it back from discord emojis <br></mark>
+  </span>
+  <span class="buttonMatrix" >
+    <button type="button" name="button" onclick="encrypt()"><mark class="a">encrypt</mark></button>
+    <button type="button" name="button" onclick="decrypt()"><mark class="a">decrypt</mark></button><br>
+    <button type="button" name="button" onclick="emoji()"><mark class="a">emoji</mark></button>
+    <button type="button" name="button" onclick="text()"><mark class="a">text</mark></button>
+    </span>
+    <h2>sending messages</h2>
+    <span>
+      <mark>
+     its pretty simple. put your message in, make sure the receiving party knows the change variable, run it through encrypt(or decrypt it works both ways) and run it back through. you can put em through both of them to scramble it further, but its just gonna work as the balenced equation. like if i do encrypt 7 decrypt 3 encrypt 4 im just gonna end up with encrypt 8 or plus 8. so i wouldnt do that because it just makes it harder for you and not anyone trying to decrypt. in the future i should be able to set up a client secret style setup, where you can go into the code and edit so that the emoji factor has about 26 different keys, but you can see below for more context.
+    </span>
+    <img src="refEncrypt.png" alt="screenshot of it on discord">
+  <h2>SSL Hand Shake</h2>
+  <mark>to do this in front of people without them knowing you both must confirm that you plan to use the code for no reason, this could be in a special phrase or not it really dosent matter, now provided that both have the decrypt and encrypt tool, you can send a first number to change it by in the emoji. then whover agrees sends another number written out (must be below 27) this must be scrambled by the first plaintext or both the first and emoji this step is optional but better for security. then scramble by this number for future. <br> please note that this is not an entirely true ssl hand shake as the public key or in this case emojis is known by both parties, and therefore all parties with this tool. what can be done is have this used as a host tool, then i make another one without emoji decrypt and scrambler. which is sent to a part</mark>
+    <script src="main.js" charset="utf-8"></script>
+    <script src="decrypt.js" charset="utf-8"></script>
+    <script src="fuckedwingdings.js" charset="utf-8"></script>
+    <script src="unfuckedwingdings.js" charset="utf-8"></script>
+  </body>
+</html>
